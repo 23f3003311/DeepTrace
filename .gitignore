@@ -2,5 +2,8 @@ __pycache__/
 *.py[cod]
 .pytest_cache/
 data/
-outputs/
+outputs/*
+!outputs/layoutlmv3-funsd/
+outputs/layoutlmv3-funsd/checkpoint-800/
+outputs/layoutlmv3-funsd/checkpoint-1000/
 .DS_Store

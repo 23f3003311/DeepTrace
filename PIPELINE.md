@@ -20,7 +20,7 @@ FUNSD has 149 train forms and 50 test forms. Each word already has a pixel box. 
 
 The run was 1000 steps, learning rate `1e-5`, effective batch 16, seed 42. The checkpoint is `outputs/layoutlmv3-funsd`. Best test entity F1 is **0.802** at step 800. The published LayoutLMv3 figure is higher because that paper used one box for a whole entity. This run uses one box per word, which is what OCR can actually give at inference.
 
-`outputs/` is gitignored, so a fresh clone does not contain the checkpoint. Train it, or copy that folder across.
+The inference checkpoint is in the repo at `outputs/layoutlmv3-funsd` (`model.safetensors` is stored with Git LFS). Clone with Git LFS installed, or the weights file will be a pointer instead of the model. The optimizer states in `checkpoint-800` and `checkpoint-1000` are not in the repo. FUNSD itself stays local under `data/`.
 
 ## Inference on a GPU
 

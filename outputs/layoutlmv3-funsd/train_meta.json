@@ -1,0 +1,20 @@
+{
+  "model": "microsoft/layoutlmv3-base",
+  "dataset": "FUNSD",
+  "labels": [
+    "O",
+    "B-HEADER",
+    "I-HEADER",
+    "B-QUESTION",
+    "I-QUESTION",
+    "B-ANSWER",
+    "I-ANSWER"
+  ],
+  "boxes": "word-level, normalized 0-1000",
+  "order": "reading order",
+  "max_steps": 1000,
+  "learning_rate": 1e-05,
+  "effective_batch_size": 16,
+  "seed": 42,
+  "ocr_during_training": "FUNSD gold words, not Baidu"
+}
